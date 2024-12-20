@@ -10,22 +10,25 @@
     <div class="container">
         <h1>Healthcare Portal</h1>
         <form id="initial-form">
-            <label for="aadhar">Enter Aadhar Number:</label>
-            <input type="text" id="aadhar" name="aadhar" required>
-
             <div>
-                <input type="radio" id="healthcare" name="user-type" value="healthcare">
-                <label for="healthcare">Healthcare Provider</label>
+                <label for="aadhar">Enter Aadhar Number:</label>
+                <input type="text" id="aadhar" name="aadhar" placeholder="XXXX XXXX XXXX" required>
             </div>
-            <div>
-                <input type="radio" id="user" name="user-type" value="user">
-                <label for="user">User</label>
+
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="healthcare" name="user-type" value="healthcare">
+                    <label for="healthcare">Healthcare Provider</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="user" name="user-type" value="user">
+                    <label for="user">User</label>
+                </div>
             </div>
 
             <button type="submit" class="submit-btn">Submit</button>
         </form>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
